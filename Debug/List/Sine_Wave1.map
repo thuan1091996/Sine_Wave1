@@ -1,0 +1,33 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+Freq_load                                                                         0x0160       4
+Freq_2                                                                            0x0164       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+Freq_1                                                                            R4,R5        2
+Tick_freq1                                                                        R6,R7        2
+signal_time1                                                                      R8,R9        2
+Freq_2_duty                                                                       R10,R11      2
+T_delay                                                                           R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer2_ovf_isr                                                                    0x00048     14
+timer1_ovf_isr                                                                    0x00056     18
+main                                                                              0x00068     10
+Interrupt_Enable                                                                  0x00072      4
+GPIOB_Init                                                                        0x00076      9
+Timer1_Init                                                                       0x0007F     40
+Timer2_Init                                                                       0x000A7      8
+Signal_freq1                                                                      0x000AF     15
+ADC_Init                                                                          0x000BE      5
+ADC_Read                                                                          0x000C3     34
+Update_signals                                                                    0x000E5     38
